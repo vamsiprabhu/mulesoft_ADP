@@ -1,0 +1,122 @@
+{
+	"info": {
+		"_postman_id": "1f731e15-040b-476b-a47e-05290ca680cc",
+		"name": "Prabhu",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://localhost:8081/api/api/codebase/v1/StudentsWithMarks",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\t\"employee\": [{\r\n\t\t\t\"id\": \"A007\",\r\n\t\t\t\"first_name\": \"Jan\",\r\n\t\t\t\"last_name\": \"Doe\"\r\n\t\t},\r\n\t\t{\r\n\t\t\t\"id\": \"A008\",\r\n\t\t\t\"first_name\": \"Ron\",\r\n\t\t\t\"last_name\": \"David\"\r\n\t\t},\r\n\t\t{\r\n\t\t\t\"id\": \"A009\",\r\n\t\t\t\"first_name\": \"Jane\",\r\n\t\t\t\"last_name\": \"Kane\"\r\n\t\t},\r\n\t\t{\r\n\t\t\t\"id\": \"A010\",\r\n\t\t\t\"first_name\": \"Marsh\",\r\n\t\t\t\"last_name\": \"Megan\"\r\n\t\t},\r\n\t\t{\r\n\t\t\t\"id\": \"A011\",\r\n\t\t\t\"first_name\": \"Kelly\",\r\n\t\t\t\"last_name\": \"Mitch\"\r\n\t\t},\r\n\t\t{\r\n\t\t\t\"id\": \"A012\",\r\n\t\t\t\"first_name\": \"Chris\",\r\n\t\t\t\"last_name\": \"Vaste\"\r\n\t\t}\r\n\t],\r\n\t\"scoreBoard\": [{\r\n\t\t\t\"id\": \"A007\",\r\n\t\t\t\"subjects\": [\"Maths\", \"English\", \"Arts\", \"Drawimgs\"],\r\n\t\t\t\"score\": [80, 75, 89, 100]\r\n\t\t},\r\n\t\t{\r\n\t\t\t\"id\": \"A008\",\r\n\t\t\t\"subjects\": [\"Maths\", \"English\", \"Arts\", \"Drawimgs\"],\r\n\t\t\t\"score\": [70, 85, 69, 90]\r\n\t\t},\r\n\t\t{\r\n\t\t\t\"id\": \"A021\",\r\n\t\t\t\"subjects\": [\"Maths\", \"English\", \"Arts\", \"Drawimgs\"],\r\n\t\t\t\"score\": [90, 87, 77, 95]\r\n\t\t}\r\n\t]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:8081/api/api/codebase/v1/StudentsWithMarks"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8081/api/api/codebase/v1/Students",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\t\"employee\": [{\r\n\t\t\t\"id\": \"A007\",\r\n\t\t\t\"first_name\": \"Jan\",\r\n\t\t\t\"last_name\": \"Doe\"\r\n\t\t},\r\n\t\t{\r\n\t\t\t\"id\": \"A008\",\r\n\t\t\t\"first_name\": \"Ron\",\r\n\t\t\t\"last_name\": \"David\"\r\n\t\t},\r\n\t\t{\r\n\t\t\t\"id\": \"A009\",\r\n\t\t\t\"first_name\": \"Jane\",\r\n\t\t\t\"last_name\": \"Kane\"\r\n\t\t},\r\n\t\t{\r\n\t\t\t\"id\": \"A010\",\r\n\t\t\t\"first_name\": \"Marsh\",\r\n\t\t\t\"last_name\": \"Megan\"\r\n\t\t},\r\n\t\t{\r\n\t\t\t\"id\": \"A011\",\r\n\t\t\t\"first_name\": \"Kelly\",\r\n\t\t\t\"last_name\": \"Mitch\"\r\n\t\t},\r\n\t\t{\r\n\t\t\t\"id\": \"A012\",\r\n\t\t\t\"first_name\": \"Chris\",\r\n\t\t\t\"last_name\": \"Vaste\"\r\n\t\t}\r\n\t],\r\n\t\"scoreBoard\": [{\r\n\t\t\t\"id\": \"A007\",\r\n\t\t\t\"subjects\": [\"Maths\", \"English\", \"Arts\", \"Drawimgs\"],\r\n\t\t\t\"score\": [80, 75, 89, 100]\r\n\t\t},\r\n\t\t{\r\n\t\t\t\"id\": \"A008\",\r\n\t\t\t\"subjects\": [\"Maths\", \"English\", \"Arts\", \"Drawimgs\"],\r\n\t\t\t\"score\": [70, 85, 69, 90]\r\n\t\t},\r\n\t\t{\r\n\t\t\t\"id\": \"A021\",\r\n\t\t\t\"subjects\": [\"Maths\", \"English\", \"Arts\", \"Drawimgs\"],\r\n\t\t\t\"score\": [90, 87, 77, 95]\r\n\t\t}\r\n\t]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:8081/api/api/codebase/v1/Students"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8081/api/api/codebase/v1/naturalNumbers?offset=3",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8081/api/api/codebase/v1/naturalNumbers?offset=3",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"api",
+						"api",
+						"codebase",
+						"v1",
+						"naturalNumbers"
+					],
+					"query": [
+						{
+							"key": "offset",
+							"value": "3"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8081/api/api/codebase/v1/StringManipultaion?sample=TEST unlimted",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8081/api/api/codebase/v1/StringManipultaion?sample=TEST unlimted",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"api",
+						"api",
+						"codebase",
+						"v1",
+						"StringManipultaion"
+					],
+					"query": [
+						{
+							"key": "sample",
+							"value": "TEST unlimted"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8081/api/api/codebase/v1/Employees",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\t\"employee\":{\r\n\t\t\"id\":\"A007\",\r\n\t\t\"first_name\":\"Jan\",\r\n\t\t\"last_name\":\"Doe\"\r\n\t}\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:8081/api/api/codebase/v1/Employees"
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
